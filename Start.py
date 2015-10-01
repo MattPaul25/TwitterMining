@@ -1,4 +1,4 @@
-from TwitterCrawler import authorize_twitter 
+﻿from TwitterHandler import authorize_twitter
 from Secrets import authorization_key
 import Secrets
 
@@ -10,7 +10,7 @@ class Starter:
         self.get_search_results()
 
     def get_search_results(self):
-        status_results = self.auth_plz.api.search("BMW")
+        status_results = self.auth_plz.api.search(" Goog ")
         for status in status_results:
             print (status.user.screen_name + ":" + status.text, end = "\n\n")
   

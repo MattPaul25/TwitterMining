@@ -1,0 +1,7 @@
+#!C:\Users\Matt\documents\visual studio 2013\Projects\TwitterCrawler\pip\Scripts\python.exe
+
+import warnings
+warnings.simplefilter('default', DeprecationWarning)
+
+from logilab.common.pytest import run
+run()
