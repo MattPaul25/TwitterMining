@@ -18,26 +18,34 @@ class CsvReader():
            x += str(row) + '\n'
         return x
 
-class DatabaseHandler():
+
+class DatabaseConnect():
+    """add some method for connection here"""
+
+
+class DatabaseReader(DatabaseConnect):
     """Handles all transactions with database"""
 
-    def __init__(self, request, is_pull):
+    def __init__(self, request):
         self._request = request
-        if is_pull:
-            self.extract_data()
-        elif not is_pull:
-            self.push_data()
-        
+
     def extract_data():
         """pull data from database and place it in list"""
         # add code here
+        return ['some data', 1]
+
+
+class DatabaseWriter(DatabaseConnect):
+    """Handles all transactions with database"""
+
+    def __init__(self, request):
+        self._request = request
 
     def push_data():
         """run query on server but do not create a list"""
         #add code here 
 
-
-x = csv_reader("companylist.csv")
-print(x)
+#x = csv_reader("companylist.csv")
+#print(x)
 
 
